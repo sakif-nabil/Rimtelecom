@@ -1,0 +1,181 @@
+/*start scroll icon*/
+.scroll-down {
+    height: 90px;
+    width: 50px;
+    border: 2px solid white;
+    border: none;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    border-radius: 50px;
+    cursor:help;
+    background: rgba(2, 2, 2, 0.8);
+  }
+  .scroll-down::before,
+  .scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  .scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+  }
+  
+  @keyframes scroll-down {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  }
+  /*end scroll icon*/
+/*start join*/
+.join{
+    background-image: url('src\assets\images\plateformeBackg.jpg');
+    min-height: 600px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.join .shadow{
+    background: rgba(57, 64, 67, 0.85);
+    color: #fff;
+    min-height: 600px;
+    padding-top: 100px;
+}
+.join h1{
+ margin-top: 200px;
+  
+}
+/*end join*/
+
+.tools{
+    margin-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+    background: #fff;
+}
+.tools .sub-row1{
+   padding-right:100px;
+   padding-left: 0px;
+   padding-bottom: 60px;
+}
+.tools .sub-row2{
+    padding-right:0px;
+    padding-left: 100px;
+    padding-bottom: 60px;
+ }
+.tools .btn-web{
+    background-color: #ed1d24;
+    color:#fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ed1d24;
+    margin-top: 30px;
+    border-radius: 5%;
+}
+.tools .btn-web:hover{
+    background-color: #e3633f;
+}
+.tools .btn-store img{
+    background-color:  #ed1d24;
+}
+
+.tools .btn-android img{
+    background-color: #ed1d24;
+}
+.tools .btn-android img:hover{
+ background-color:#08526d;
+ border:#ed1d24 ;
+}
+.tools .btn-store img:hover{
+    background-color:#08526d;
+    border:#ed1d24 ;
+   }
+.tools .btn-store{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.tools .btn-android{
+    margin: 10px;
+    padding: 0px;
+  
+}
+.head{
+   color: #333;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.row{
+    margin-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+img {
+    max-width: 400px;
+}
+
+.sub-row1{
+    padding-left: 0px;
+}
+.tools a{
+background: url('src\assets\images\appstore.png') no-repeat center center transparent;
+
+color: green;
+
+-webkit-transition: all 0.35s;
+-o-transition: all 0.35s;
+transition: all 0.35s;
+opacity: 1;
+filter: alpha(opacity=100);
+display: inline-block;
+
+overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+   .row2{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   img {
+    max-width: 150px;
+}
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.row2 .div1{
+    width: 100%;
+  
+    right: 0px;
+   
+    
+ }
+
+  }
